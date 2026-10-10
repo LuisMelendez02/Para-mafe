@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#17112e">
-<title>Tu esposo ♥ Prinsesa — Nuestra aventura</title>
+<title>Tu esposo ♥ Mi Prinsesa — Feliz primer año ❤️</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Nunito:wght@400;600;700;800;900&display=swap');
 :root{--bg:#17112e;--panel:#251b48;--panel2:#302357;--pink:#ff80b5;--pink2:#ffb5d2;--cream:#fff3dc;--mint:#a7f3d0;--yellow:#ffe28a;--purple:#b9a2ff;--text:#fff8ff;--muted:#d2c7e8;--shadow:#0b0719}
@@ -15,18 +15,18 @@
 </head>
 <body>
 <div class="wrap">
-  <header class="top"><div class="brand">PLAYER 1: TU ESPOSO<br>PLAYER 2: PRINSESA</div><div class="hearts" aria-label="corazones">♥ ♥ ♥</div></header>
-  <div class="progress-wrap"><div class="small" id="progressText">Misión de aniversario · 0 de 4 niveles</div><div class="progress-line"><div class="progress-fill" id="progressFill"></div></div></div>
+  <header class="top"><div class="brand">PLAYER 1: TU ESPOSO<br>PLAYER 2: MAFE</div><div class="hearts" aria-label="corazones">♥ ♥ ♥</div></header>
+  <div class="progress-wrap"><div class="small" id="progressText">Regalo para mi esposa· 0 de 4 niveles</div><div class="progress-line"><div class="progress-fill" id="progressFill"></div></div></div>
 
   <section class="screen active" id="home"><div class="panel">
-    <div class="eyebrow">★ UNA AVENTURA HECHA PARA TI ★</div><div class="sprite" aria-hidden="true">🕹️💗</div>
-    <h1 class="pixel-title">Nuestra<br>aventura</h1>
-    <p class="subtitle">Hola, Prinsesa. ✨<br>Hay un pequeño mundo que preparé para ti. Avanza por los niveles, reúne corazones y descubre el secreto que te espera al final.</p>
-    <div class="tiny">MISIÓN ESPECIAL: NUESTRO ANIVERSARIO</div>
-    <div class="actions"><button class="btn" onclick="startGame()">▶ COMENZAR</button><button class="btn ghost" onclick="show('memories')">♥ VER RECUERDOS</button></div>
+    <div class="eyebrow">★ Te amo ★</div><div class="sprite" aria-hidden="true">🕹️💗</div>
+    <h1 class="pixel-title">Primer año<br>juntos</h1>
+    <p class="subtitle">Hola, Prinsesa. ✨<br> Al final hay una sorpresa para ti.</p>
+    <div class="tiny">Dia especial: Nuestro primer año</div>
+    <div class="actions"><button class="btn" onclick="startGame()">▶ COMENZAR</button><button class="btn ghost" onclick="show('memories')">♥ VER FOTOS</button></div>
   </div><p class="footer">Hecho con cariño por Tu esposo ♥</p></section>
 
-  <section class="screen" id="level1"><div class="panel"><div class="eyebrow">NIVEL 1 · EL COMIENZO</div><div class="sprite">🌷</div><h2 class="pixel-title">La primera chispa</h2><p class="subtitle">Toda aventura tiene un comienzo. Contesta esta pregunta para ganar tu primer corazón.</p><div class="question">¿Qué hace especial nuestra historia?</div><div class="answers"><button class="answer" onclick="choose(this,false,'¡Casi! Prueba otra vez, tú puedes 💗')">A) Que nunca nos equivocamos</button><button class="answer" onclick="choose(this,true,'¡Eso! Lo especial es todo lo que construimos juntos. 💖')">B) Que somos nosotros, con nuestros momentos y recuerdos</button><button class="answer" onclick="choose(this,false,'Pista: no se trata de ser perfectos ✨')">C) Que todo siempre sale perfecto</button></div><div class="feedback" id="fb1" aria-live="polite"></div><div class="actions"><button class="btn hide" id="next1" onclick="complete(1,'level2')">SIGUIENTE NIVEL →</button></div></div></section>
+  <section class="screen" id="level1"><div class="panel"><div class="eyebrow">NIVEL 1 · ¿Quieres ver tu sorpresa?</div><div class="sprite">🌷</div><h2 class="pixel-title"> </h2><p class="subtitle">Toda aventura tiene un comienzo. Contesta esta pregunta para ganar tu primer corazón.</p><div class="question">¿Qué hace especial nuestra historia?</div><div class="answers"><button class="answer" onclick="choose(this,false,'¡Casi! Prueba otra vez, tú puedes 💗')">A) Que nunca nos equivocamos</button><button class="answer" onclick="choose(this,true,'¡Eso! Lo especial es todo lo que construimos juntos. 💖')">B) Que somos nosotros, con nuestros momentos y recuerdos</button><button class="answer" onclick="choose(this,false,'Pista: no se trata de ser perfectos ✨')">C) Que todo siempre sale perfecto</button></div><div class="feedback" id="fb1" aria-live="polite"></div><div class="actions"><button class="btn hide" id="next1" onclick="complete(1,'level2')">SIGUIENTE NIVEL →</button></div></div></section>
 
   <section class="screen" id="level2"><div class="panel"><div class="eyebrow">NIVEL 2 · NUESTROS RECUERDOS</div><div class="sprite">📸💫</div><h2 class="pixel-title">El cofre del tiempo</h2><p class="subtitle">Los recuerdos son tesoros. Elige la respuesta que más se parece a lo que sientes.</p><div class="question">¿Cuál es uno de los mejores regalos de estar juntos?</div><div class="answers"><button class="answer" onclick="choose2(this,false,'Piénsalo un poquito más, Prinsesa 💞')">A) Tener siempre la razón</button><button class="answer" onclick="choose2(this,true,'¡Sí! Compartir tiempo, risas y cariño vale muchísimo. 🌟')">B) Compartir tiempo, risas y cariño</button><button class="answer" onclick="choose2(this,false,'Pista: es algo que se siente, no se compra 💌')">C) Ganar todos los juegos</button></div><div class="feedback" id="fb2" aria-live="polite"></div><div class="actions"><button class="btn hide" id="next2" onclick="complete(2,'memories')">ABRIR RECUERDOS →</button></div></div></section>
 
